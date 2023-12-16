@@ -39,7 +39,7 @@ npm install
 
 ## Usage
 
-Run the Flask Backend
+### Run the Flask Backend
 Navigate to the backend directory and start the Flask server:
 
 ```bash
@@ -48,7 +48,7 @@ python app.py
 ```
 The Flask server will start on localhost:5000.
 
-Run the Frontend
+### Run the Frontend
 Navigate to the frontend directory and start a simple HTTP server to serve the frontend files:
 
 ```bash
