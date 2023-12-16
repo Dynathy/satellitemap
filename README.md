@@ -37,23 +37,23 @@ cd frontend
 npm install
 ```
 
-###Usage
+### Usage
 Run the Flask Backend
 Navigate to the backend directory and start the Flask server:
 
-bash
-Copy code
+```bash
 cd backend
 python app.py
+```
 The Flask server will start on localhost:5000.
 
 Run the Frontend
 Navigate to the frontend directory and start a simple HTTP server to serve the frontend files:
 
-bash
-Copy code
+```bash
 cd frontend
 python -m http.server
+```
 This will start a local server (usually on localhost:8000). Open your web browser and go to http://localhost:8000 to view the application.
 
 ## Configuration
