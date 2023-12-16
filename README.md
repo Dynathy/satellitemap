@@ -37,7 +37,8 @@ cd frontend
 npm install
 ```
 
-### Usage
+## Usage
+
 Run the Flask Backend
 Navigate to the backend directory and start the Flask server:
 
