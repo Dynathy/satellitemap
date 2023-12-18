@@ -44,7 +44,7 @@ Navigate to the backend directory and start the Flask server:
 
 ```bash
 cd backend
-python app.py
+python integrated.py
 ```
 The Flask server will start on localhost:5000.
 
