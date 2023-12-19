@@ -1,0 +1,27 @@
+-- Create the 'satellites' table
+CREATE TABLE satellites (
+    id SERIAL PRIMARY KEY,
+    norad_id INT UNIQUE NOT NULL,
+    name VARCHAR(255),
+    launch_date DATE
+);
+
+-- Create the 'tle_data' table
+CREATE TABLE tle_data (
+    id SERIAL PRIMARY KEY,
+    satellite_id INT REFERENCES satellites(id),
+    tle_line1 TEXT,
+    tle_line2 TEXT,
+    epoch TIMESTAMP,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create the 'historical_tle_data' table
+CREATE TABLE historical_tle_data (
+    id SERIAL PRIMARY KEY,
+    satellite_id INT REFERENCES satellites(id),
+    tle_line1 TEXT,
+    tle_line2 TEXT,
+    epoch TIMESTAMP,
+    recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
