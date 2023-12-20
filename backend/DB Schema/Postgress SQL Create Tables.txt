@@ -1,8 +1,6 @@
 -- Create the 'satellites' table
 CREATE TABLE satellites (
-    id SERIAL PRIMARY KEY,
-    norad_id INT UNIQUE NOT NULL,
-    name VARCHAR(255),
+    
     launch_date DATE
 );
 
